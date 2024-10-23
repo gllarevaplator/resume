@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContentSection from "../components/AnimatedContentSection";
 import MotionImage from "../components/MotionImage";
 
