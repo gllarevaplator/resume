@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MotionText from "./MotionText";
+import Image from "next/image";
 
 interface Project {
   id: string;
@@ -50,8 +51,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
             style={{ objectFit: "cover", backgroundSize: "cover" }}
           >
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img
-                src={project.imageUrl}
+              <Image
+                src={project.imageUrl ? project.imageUrl : ""}
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
