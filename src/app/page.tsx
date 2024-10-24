@@ -18,8 +18,8 @@ export default function Home() {
           <ContentSection title="Plator Gllareva" />
           <ContentSection
             title=""
-            description="Passionate Frontend Engineer with over 4 years of experience in
-              developing dynamic and responsive web applications."
+            description="Frontend Engineer with over 4 years of experience in
+              developing dynamic and responsive websites & applications."
           />
           <ContentSection
             title=""

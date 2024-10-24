@@ -47,7 +47,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
             initial="hidden"
             animate="visible"
             custom={index}
-            className="flex flex-col rounded-lg shadow-lg overflow-hidden border border-[#222222]"
+            className="flex flex-col rounded-lg shadow-lg overflow-hidden border border-[#222222] hover:border-white hover:duration-500"
             style={{ objectFit: "cover", backgroundSize: "cover" }}
           >
             <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -55,6 +55,8 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
                 src={project.imageUrl ? project.imageUrl : ""}
                 alt={project.title}
                 className="w-full h-48 object-cover"
+                width={392}
+                height={192}
               />
               <div className="p-4 border-white">
                 <MotionText>
